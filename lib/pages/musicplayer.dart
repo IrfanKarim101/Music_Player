@@ -31,7 +31,7 @@ class MusicPlayerScreen extends StatelessWidget {
             SongInfo(songTitle: 'Dream It Possible', artistName: 'Delacey'),
 
             // Song progress bar
-            MusicSlider(currentTime: 3.25, totalTime: 5.05),
+            const MusicSlider(currentTime: 3.25, totalTime: 5.05),
 
             // Playback controls
             const PlaybackControls(),

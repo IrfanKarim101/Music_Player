@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeService with ChangeNotifier {
-  bool _isDarkMode = false;
+  bool _isDarkMode = true;
 
   ThemeService() {
     _loadThemeFromPreferences();

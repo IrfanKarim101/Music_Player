@@ -4,7 +4,7 @@ class SongInfo extends StatelessWidget {
   final String songTitle;
   final String artistName;
 
-  SongInfo({required this.songTitle, required this.artistName});
+  const SongInfo({super.key, required this.songTitle, required this.artistName});
 
   @override
   Widget build(BuildContext context) {
@@ -12,19 +12,12 @@ class SongInfo extends StatelessWidget {
       children: [
         Text(
           songTitle,
-          style: const TextStyle(
-            fontSize: 24,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         const SizedBox(height: 4),
         Text(
           artistName,
-          style: const TextStyle(
-            fontSize: 16,
-            color: Colors.white70,
-          ),
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
       ],
     );
