@@ -51,7 +51,7 @@ class AppThemes {
       buttonColor: Colors.blueGrey,
       textTheme: ButtonTextTheme.primary,
     ),
-    iconTheme: const IconThemeData(color: Colors.blueGrey),
+    iconTheme: IconThemeData(color: Colors.blueGrey.shade300),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: Colors.blueGrey,
     ),
